@@ -1,6 +1,6 @@
-# Kedro Scikit-learn
+# Kedro MLflow
 
-A simple example project using Kedro and Scikit-learn
+A simple example project using Kedro, MLflow, and Scikit-learn
 
 <p align="center">
 <img src="img/kedro_pipeline.png">
@@ -14,16 +14,16 @@ Pipeline visualized by Kedro-viz
 ### 1. Install dependencies
 
 ```bash
-$ pip install kedro scikit-learn pandas kedro-viz 
+$ pip install kedro scikit-learn pandas mlflow kedro-viz 
 ```
 
-Note: `kedro-viz` is optional.
+Note: `mlflow` and `kedro-viz` are optional.
 
 ### 2. Clone this repository and run `main.py`
 
 ```bash
-$ git clone https://github.com/Minyus/kedro_sklearn.git
-$ cd kedro_sklearn
+$ git clone https://github.com/Minyus/kedro_mlflow.git
+$ cd kedro_mlflow
 $ python main.py
 ```
 
@@ -32,6 +32,23 @@ Alternatively, Kedro CLI can be used to run.
 ```bash
 $ kedro run
 ```
+
+## 3. [Optional] View the experiment logs in MLflow's UI 
+
+```bash
+$ mlflow server --host 0.0.0.0 --backend-store-uri sqlite:///mlruns/sqlite.db --default-artifact-root ./mlruns/experiment_001
+```
+
+<p align="center">
+<img src="img/mlflow_ui.png">
+Experiment logs in MLflow's UI
+</p>
+
+## MLflw logging configuration
+
+In this example project, MLflow logging is configured in Python code at `src/hooks/mlflow_hooks.py` so users can get benefit from linting/auto-completion by the Python IDE. It is also possible to configure in `parameters.yml` as demonstrated [here](https://github.com/Minyus/pipelinex_sklearn).
+
+Regarding MLflow logging options, please see [here](https://github.com/Minyus/pipelinex#define-kedro-hooks-using-hooks-key)
 
 ## Kedro catalog configuration
 
