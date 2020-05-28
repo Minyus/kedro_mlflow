@@ -8,6 +8,7 @@ from kedro.pipeline import Pipeline
 
 from src.catalogs.catalog import catalog_dict
 from src.hooks.add_catalog_dict import AddCatalogDictHook
+from src.hooks.mlflow_hooks import mlflow_hooks
 
 
 class ProjectContext(KedroContext):
@@ -15,7 +16,7 @@ class ProjectContext(KedroContext):
     project_name = "KedroProject"
     project_version = kedro.__version__
     package_name = "nodes"
-    hooks = (AddCatalogDictHook(catalog_dict),)
+    hooks = [AddCatalogDictHook(catalog_dict)] + mlflow_hooks
 
     def _get_pipelines(self) -> Dict[str, Pipeline]:
         return pipelines_dict
