@@ -14,10 +14,10 @@ Pipeline visualized by Kedro-viz
 ### 1. Install dependencies
 
 ```bash
-$ pip install kedro scikit-learn pandas mlflow kedro-viz 
+$ pip install kedro scikit-learn pandas pipelinex mlflow plotly kedro-viz 
 ```
 
-Note: `mlflow` and `kedro-viz` are optional.
+Note: `plotly` and `kedro-viz` are for visualization.
 
 ### 2. Clone this repository and run `main.py`
 
