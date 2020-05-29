@@ -53,3 +53,14 @@ Regarding MLflow logging options, please see [here](https://github.com/Minyus/pi
 ## Kedro catalog configuration
 
 In this example project, the Kedro catalog is configured in Python code at `src/catalogs/catalog.py` using a hook at `src/hooks/add_catalog_dict.py` so users can get benefit from linting/auto-completion by the Python IDE. It is also possible to configure in `catalog.yml` as well.
+
+
+## Simplified Kedro project template
+
+This project was created from the GitHub template repository at https://github.com/Minyus/kedro_template
+
+To use for a new project, fork the template repository and hit `Use this template` button next to `Clone or download`.
+
+<p align="center">
+<img src="https://help.github.com/assets/images/help/repository/use-this-template-button.png">
+</p>
