@@ -18,7 +18,7 @@ mlflow_hooks = [
         ],  # Optionally specify the dataset names to log after the node is run
         filepaths_after_pipeline_run=[],  # Optionally specify the file paths to log after pipeline is run
     ),  # Log artifacts of specified file paths and dataset names
-    pipelinex.MLflowOutputsLoggerHook(
+    pipelinex.MLflowDataSetsLoggerHook(
         enable_mlflow=True,  # Enable logging to MLflow
     ),  # Log output datasets of (list of) float, int, and str classes
     pipelinex.MLflowTimeLoggerHook(
