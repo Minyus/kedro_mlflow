@@ -48,7 +48,7 @@ Experiment logs in MLflow's UI
 
 In this example project, MLflow logging is configured in Python code at `src/hooks/mlflow_hooks.py` so users can get benefit from linting/auto-completion by the Python IDE. It is also possible to configure in `parameters.yml` as demonstrated [here](https://github.com/Minyus/pipelinex_sklearn).
 
-Regarding MLflow logging options, please see [here](https://github.com/Minyus/pipelinex#define-kedro-hooks-using-hooks-key)
+Regarding MLflow logging options, please see [here](https://github.com/Minyus/pipelinex#integration-with-mlflow-by-kedro-hooks-callbacks)
 
 ## Kedro catalog configuration
 
