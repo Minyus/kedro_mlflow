@@ -39,7 +39,7 @@ Alternatively, Kedro CLI can be used to run.
 $ kedro run
 ```
 
-## 5. [Optional] View the experiment logs in MLflow's UI 
+### 5. [Optional] View the experiment logs in MLflow's UI 
 
 ```bash
 $ mlflow server --host 0.0.0.0 --backend-store-uri sqlite:///mlruns/sqlite.db --default-artifact-root ./mlruns/experiment_001
