@@ -10,7 +10,6 @@ Pipeline visualized by Kedro-viz
 
 ## How to run:
 
-### 0: Download `train.csv` and `test.csv` from [Kaggle Titanic](https://www.kaggle.com/c/titanic/data) to `data/input` directory
 
 ### 1. Install dependencies
 
@@ -20,11 +19,17 @@ $ pip install kedro scikit-learn pandas pipelinex mlflow plotly kedro-viz
 
 Note: `plotly` and `kedro-viz` are for visualization.
 
-### 2. Clone this repository and run `main.py`
+### 2. Clone this repository and cd into it
 
 ```bash
 $ git clone https://github.com/Minyus/kedro_mlflow.git
 $ cd kedro_mlflow
+```
+### 3. Download `train.csv` and `test.csv` from [Kaggle Titanic](https://www.kaggle.com/c/titanic/data) to `data/input` directory
+
+### 4. Run `main.py`
+
+```bash
 $ python main.py
 ```
 
