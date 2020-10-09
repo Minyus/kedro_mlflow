@@ -1,6 +1,6 @@
 import pipelinex
 
-mlflow_hooks = [
+mlflow_hooks = (
     pipelinex.MLflowBasicLoggerHook(
         enable_mlflow=True,  # Enable configuring and logging to MLflow
         uri="sqlite:///mlruns/sqlite.db",
@@ -31,4 +31,4 @@ mlflow_hooks = [
             )  # Log duration time to load and save each dataset
         ],
     ),  # Add transformers
-]
+)

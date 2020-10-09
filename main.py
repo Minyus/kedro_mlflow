@@ -16,7 +16,7 @@ class ProjectContext(KedroContext):
     project_name = "KedroProject"
     project_version = kedro.__version__
     package_name = "nodes"
-    hooks = [AddCatalogDictHook(catalog_dict)] + mlflow_hooks
+    hooks = (AddCatalogDictHook(catalog_dict),) + mlflow_hooks
 
     def _get_pipelines(self) -> Dict[str, Pipeline]:
         return pipelines_dict
