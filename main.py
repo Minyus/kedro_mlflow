@@ -5,8 +5,7 @@ from kedro.framework.context import KedroContext
 
 from src.catalogs.catalog import catalog_dict
 from src.pipelines.pipeline import pipelines_dict
-from src.hooks.add_catalog_dict import AddCatalogDictHook
-from src.hooks.register_pipelines import RegisterPipelinesHook
+from src.hooks.basic_hooks import AddCatalogDictHook, RegisterPipelinesHook
 from src.hooks.mlflow_hooks import mlflow_hooks
 
 
