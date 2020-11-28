@@ -1,5 +1,26 @@
-# Data Description: https://www.kaggle.com/c/titanic/data
-cols_features: # Columns used as features in the Titanic data table
-  - Pclass # The passenger's ticket class
-  - Parch # # of parents / children aboard the Titanic
-col_target: Survived # Column used as the target: whether the passenger survived or not
+# Dataset: Kaggle Titanic
+# URL: https://www.kaggle.com/uciml/iris/data
+# Modification: for each species, setosa is encoded to 0, versicolor is encoded to 1, and virginica samples are removed.
+# Split: for each species,  first 25 samples are used in train.csv, and last 25 samples are used in test.csv.
+#
+# Columns used as features 
+cols_features: 
+  - sepal_length
+  # - sepal_width
+  # - petal_length
+  # - petal_width 
+#
+# Column used as the target
+col_target: species
+
+
+# Dataset: Kaggle Titanic:
+# URL: https://www.kaggle.com/c/titanic/data
+#
+# Columns used as features 
+# cols_features:
+#   - Pclass # The passenger's ticket class
+#   - Parch # # of parents / children aboard the Titanic
+#
+# Columns used as features 
+# col_target: Survived

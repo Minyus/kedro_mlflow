@@ -164,12 +164,16 @@ mlruns/**
 # catboost
 catboost_info
 
-# csv files
-*.csv
+# VS Code
+.vscode/
 
+# Other files
 *.pt
 *.pth
 *-ubyte
+*.gz
+*.db
 
-# VS Code
-.vscode/
+# Keep example datasets
+!data/input/train.csv
+!data/input/test.csv

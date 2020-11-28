@@ -25,7 +25,10 @@ Note: `plotly` and `kedro-viz` are for visualization.
 $ git clone https://github.com/Minyus/kedro_mlflow.git
 $ cd kedro_mlflow
 ```
-### 3. Download `train.csv` and `test.csv` from [Kaggle Titanic](https://www.kaggle.com/c/titanic/data) to `data/input` directory
+
+### 3. Go to next step to use the Iris datasets included in this project. 
+
+Optionally, you may dowonload another dataset such as [Kaggle Titanic](https://www.kaggle.com/c/titanic/data), replace  `train.csv` and `test.csv` in `data/input` directory, and modify `base/parameters.yml` to set parameters appropriate for the dataset.
 
 ### 4. Run `main.py`
 
