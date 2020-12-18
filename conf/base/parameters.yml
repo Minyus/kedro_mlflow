@@ -1,4 +1,4 @@
-# Dataset: Kaggle Titanic
+# Dataset: Iris 
 # URL: https://www.kaggle.com/uciml/iris/data
 # Modification: for each species, setosa is encoded to 0, versicolor is encoded to 1, and virginica samples are removed.
 # Split: for each species,  first 25 samples are used in train.csv, and last 25 samples are used in test.csv.
@@ -14,7 +14,7 @@ cols_features:
 col_target: species
 
 
-# Dataset: Kaggle Titanic:
+# Dataset: Kaggle Titanic
 # URL: https://www.kaggle.com/c/titanic/data
 #
 # Columns used as features 
